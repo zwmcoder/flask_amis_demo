@@ -1,6 +1,6 @@
 from flask import Blueprint,render_template,Flask,request,redirect,session,json,current_app as app
 import hashlib,time
-from models import db, Class
+from models import db
 from public import r
 
 chat_bot=Blueprint('chat_bot',__name__)
