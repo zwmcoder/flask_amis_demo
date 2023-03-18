@@ -11,9 +11,8 @@ def login():
 	if request.method == 'GET':
 		data={
 		}
-		path = os.getcwd
-		print(path)
 		return render_template('login.html',**data)
+	# Post need validate password
 	data = request.get_data()
 	j_data =  json.loads(data)
 	user=db.session.query(Admin).filter_by(admin=j_data['admin']).first()

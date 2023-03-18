@@ -132,9 +132,9 @@
                 <i class="a-AsideNav-itemIcon glyphicon glyphicon-glass"></i>
                 <span class="a-AsideNav-itemLabel">ChatGPT</span>
               </a> 
-             <!-- <div class="a-AsideNav-tooltip">
+             <div class="a-AsideNav-tooltip">
               用户管理
-             </div> -->
+             </div>
             </li> 
           {% endif %}
          </ul> 
@@ -146,6 +146,10 @@
      <div class="a-Layout-content" role="main"> 
       <div id="main" class="a-Layout-body"></div> 
      </div> 
-    </div> 
+    </div>
+    <script type="text/javascript">
+      {% block content %}
+      {% endblock content %}
+    </script>  
    </body>
 </html>
